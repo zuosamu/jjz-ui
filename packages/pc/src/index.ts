@@ -29,4 +29,4 @@
 // export { default as Message } from './Card/Message';
 export * from './BasicInfo';
 export * from './Labels';
-export * from './upDownSwitch';
+export * from './UpDownSwitch';
