@@ -33,12 +33,13 @@
   "dependencies": {
     "@ant-design/pro-layout": "^7.1.15",
     "@ant-design/pro-provider": "^1.5.8",
-    "@ant-design/pro-table": "^2.63.6",
+    "@ant-design/pro-table": "^3.2.7",
     "@jjz-ui/icon": "^0.1.1",
     "@types/lodash": "^4.14.178",
     "@types/react-highlight-words": "^0.16.4",
     "antd": "^4.18.7",
     "braft-editor": "^2.3.9",
+    "dayjs": "^1.11.7",
     "lodash": "^4.17.21",
     "react-highlight-words": "^0.17.0"
   },

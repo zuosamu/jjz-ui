@@ -35,7 +35,8 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@types/lodash": "^4.14.178",
-    "antd-mobile": "^5.0.0-rc.12"
+    "antd-mobile": "^5.0.0-rc.12",
+    "dayjs": "^1.11.7"
   },
   "devDependencies": {
     "@types/react-color": "^3.0.6"

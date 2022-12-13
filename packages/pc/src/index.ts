@@ -30,3 +30,4 @@
 export * from './BasicInfo';
 export * from './Labels';
 export * from './UpDownSwitch';
+export * from './BasicProTable';
