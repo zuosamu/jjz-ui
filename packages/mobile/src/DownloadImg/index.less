@@ -1,0 +1,41 @@
+.download-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  .download-img {
+    width: 100%;
+  }
+  &:hover {
+    .download-backg {
+      display: block;
+    }
+  }
+  .canvas {
+    display: none;
+  }
+  .download-backg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+  }
+  .download-txt {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 14px;
+    margin: auto;
+    color: rgb(15, 15, 15);
+    font-size: 12px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

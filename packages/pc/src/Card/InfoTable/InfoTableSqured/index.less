@@ -1,0 +1,49 @@
+@import '../../../mixins.less';
+
+.info-table-squred {
+  overflow: hidden;
+  font-weight: 400;
+  background: #ffffff;
+  border-radius: 6px;
+  .row {
+    display: flex;
+    margin: 11.5px 14px;
+    color: #333333;
+    font-size: 14px;
+    line-height: 22px;
+    .label {
+      min-width: 110px;
+    }
+    .value {
+      margin-left: auto;
+      text-align: right;
+      word-break: break-all;
+    }
+    .label.overflow-ellipsis {
+      .overflow-ellipsis();
+    }
+    .value.overflow-ellipsis {
+      .overflow-ellipsis();
+    }
+  }
+  .divider {
+    margin: 0 0 0 14px;
+    border: 0;
+    border-bottom: 1px solid #eaeaea;
+    transform: scaleY(0.5);
+  }
+  .more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 11.5px 0;
+    color: #1e77ff;
+    font-size: 13px;
+    cursor: pointer;
+
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

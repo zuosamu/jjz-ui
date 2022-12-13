@@ -1,0 +1,35 @@
+@import '../../../mixins.less';
+
+.info-table-round {
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  background: #ffffff;
+  border-radius: 6px;
+
+  .row {
+    display: flex;
+    margin: 16px 14px;
+
+    .label {
+      min-width: 96px;
+      color: #999999;
+    }
+
+    .value {
+      margin-left: auto;
+      color: #333333;
+      text-align: right;
+      word-break: break-all;
+    }
+
+    .label.overflow-ellipsis {
+      .overflow-ellipsis();
+    }
+
+    .value.overflow-ellipsis {
+      .overflow-ellipsis();
+    }
+  }
+}

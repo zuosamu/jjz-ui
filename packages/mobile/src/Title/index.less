@@ -1,0 +1,32 @@
+.dm-title {
+  img {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+  &-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    :first-child {
+      margin-right: 6px;
+    }
+  }
+  &-content {
+    flex: 1;
+    margin: 0;
+    color: #333333;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: PingFangSC-Medium;
+    line-height: 24px;
+    letter-spacing: 0;
+  }
+}

@@ -1,0 +1,84 @@
+.card-list {
+  width: 298px;
+  height: 167px;
+  margin-top: 20px;
+  margin-right: 20px;
+  line-height: 1;
+  border: 1px solid rgba(233, 233, 233, 0.92);
+  border-radius: 2px;
+  p,
+  h3 {
+    margin: 0;
+  }
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.28);
+    cursor: pointer;
+  }
+  &.none:hover {
+    box-shadow: 0 0 black;
+  }
+  &:nth-of-type(3n + 3) {
+    margin-right: 0;
+  }
+  .card-top {
+    display: flex;
+    box-sizing: content-box;
+    height: 73px;
+    padding: 20px 30px 30px;
+    .img {
+      width: 48px;
+      height: 48px;
+    }
+    .desc {
+      margin-left: 20px;
+      .desc-title {
+        margin-top: 3px;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: PingFangSC-Medium;
+      }
+      .desc-desc {
+        margin-top: 10px;
+        line-height: 22px;
+      }
+    }
+  }
+  .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    text-align: center;
+    background: #f7f9fa;
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-width: 1px 0;
+    p {
+      position: relative;
+      width: 33%;
+      margin: 0;
+      color: #333333;
+      line-height: 44px;
+      text-align: center;
+    }
+    a {
+      color: #333333;
+    }
+    .promote {
+      width: 100%;
+      text-align: center;
+    }
+    .promoteOne::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 1px;
+      height: 14px;
+      margin: auto;
+      background-color: rgba(233, 233, 233, 1);
+      content: '';
+    }
+    .promoteOne:nth-last-of-type(1)::after {
+      width: 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import '../../mixins.less';
+
+.jjz-message-card {
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 6px;
+
+  .default-bg {
+    background: linear-gradient(180deg, #f0f8ff 0%, #ffffff 100%);
+  }
+
+  .blod {
+    font-weight: 500;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 18px 14px;
+    .title {
+      width: 100%;
+      color: #333333;
+      font-size: 14px;
+      line-height: 16px;
+      .overflow-ellipsis();
+    }
+    .title.with-maker {
+      max-width: calc(100% - 30px);
+    }
+    .marker {
+      width: 8px;
+      height: 8px;
+      margin-left: auto;
+      background: #ef4048;
+      border-radius: 50%;
+    }
+  }
+
+  .main {
+    padding: 0 14px 16px 14px;
+    .content {
+      color: #999999;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 21px;
+      word-break: break-all;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 6px;
+    }
+  }
+}

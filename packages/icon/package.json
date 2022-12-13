@@ -1,0 +1,44 @@
+{
+  "name": "@jjz-ui/icon",
+  "version": "0.1.1",
+  "description": "> TODO: description",
+  "keywords": [
+    "icon"
+  ],
+  "author": "苍狗-左森君 <zuosenjun@huize.com>",
+  "homepage": "https://github.com/zuosamu/jjz-ui#readme",
+  "license": "ISC",
+  "main": "lib/icon.js",
+  "module": "es/index.js",
+  "typings": "es/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuosamu/jjz-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/zuosamu/jjz-ui/issues"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@types/lodash": "^4.14.178",
+    "antd-mobile": "^5.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@types/react-color": "^3.0.6"
+  },
+  "gitHead": "39dc4502dd4e1f9db9152ea5443c5251e4d86188"
+}

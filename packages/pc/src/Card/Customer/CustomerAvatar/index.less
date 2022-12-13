@@ -1,0 +1,35 @@
+.jjz-customer-avatar-container {
+  position: relative;
+  display: inline-block;
+  .customer-avatar-image {
+    border-radius: 4px;
+  }
+  .customer-avatar-close {
+    position: absolute;
+    margin: auto;
+
+    &.left-start {
+      top: 0;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &.left-end {
+      bottom: 0;
+      left: 0;
+      transform: translate(-50%, 50%);
+    }
+
+    &.right-end {
+      right: 0;
+      bottom: 0;
+      transform: translate(50%, 50%);
+    }
+
+    &.right-start {
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+}

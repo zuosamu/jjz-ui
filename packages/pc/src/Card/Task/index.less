@@ -1,0 +1,58 @@
+@import '../../mixins.less';
+
+.jjz-task-card {
+  padding: 16px 14px;
+  background-color: white;
+
+  .blod {
+    font-weight: 500;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+    .title {
+      color: var(--theme-color, #1e77ff);
+      font-size: 14px;
+    }
+    .botton-container {
+      margin-left: auto;
+      button {
+        margin-right: 10px;
+        padding: 6px 8px;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        background: var(--theme-color, #1e77ff);
+        border: 0;
+        border-radius: 2px;
+      }
+      button:last-of-type {
+        margin-right: 0;
+      }
+      button:disabled {
+        color: #666666;
+        background: #f7f7f7;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .main {
+    margin-top: 7px;
+    color: #333333;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .one-line {
+    .overflow-ellipsis();
+  }
+}

@@ -1,0 +1,43 @@
+.dm-tag-box {
+  display: inline-block;
+
+  .dm-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    height: 22px;
+    padding: 0 8px;
+    overflow: hidden;
+    color: var(--textColor);
+    font-weight: 400;
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: var(--color);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    box-shadow: 0 1px 2px var(--shadow);
+    user-select: none;
+
+    &.dm-tag-plain {
+      color: var(--color);
+      background-color: var(--textColor);
+      border: 1px solid var(--borderColor);
+    }
+
+    &.dm-tag-round {
+      border-radius: 22px;
+    }
+
+    &.dm-tag-mark {
+      border-top-right-radius: 22px;
+      border-bottom-right-radius: 22px;
+    }
+  }
+}
+
+.dm-tag-box + .dm-tag-box {
+  margin-bottom: 6px;
+  margin-left: 6px;
+}

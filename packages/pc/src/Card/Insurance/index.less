@@ -1,0 +1,72 @@
+.hx-goods {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px 0 5px;
+  overflow: auto;
+  &-display {
+    flex: 1;
+    overflow: hidden;
+    h2 {
+      margin: 0;
+      color: #333333;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .des {
+      color: #999999;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+    .tips {
+      margin: 4px 0;
+      .tip {
+        display: inline-block;
+        padding: 0 3px;
+        color: #666666;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        background: #f1f2f7;
+        border-radius: 2px;
+      }
+      .tip:not(:last-child) {
+        margin-right: 4px;
+      }
+    }
+    .inside {
+      color: #666666;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 18px;
+    }
+    .price {
+      color: #e67316;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 42px;
+      .num {
+        color: #e67316;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: Akrobat-Bold, Akrobat;
+      }
+    }
+  }
+  &-logo {
+    width: 60px;
+    height: 60px;
+    margin: 4px 14px 0 10px;
+    background: rgba(30, 119, 255, 0.1);
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+  }
+  &-fire {
+    padding-left: 27px;
+    // background:url('public/img/fire.png') no-repeat left center;
+    background-size: auto 14px;
+  }
+}

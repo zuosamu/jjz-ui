@@ -1,0 +1,59 @@
+.dm-tabbar {
+  .ant-tabs-nav {
+    &::before {
+      border-color: var(--borderColor) !important;
+    }
+  }
+
+  .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap::after {
+    content: none;
+  }
+
+  .ant-tabs-top > .ant-tabs-nav .ant-tabs-nav-wrap::before {
+    content: none;
+  }
+
+  div[role='tablist'] {
+    margin-bottom: 0;
+    background-color: white;
+  }
+
+  .ant-tabs-tab {
+    padding-top: 17px !important;
+    padding-bottom: 17px !important;
+  }
+
+  .ant-tabs-tab > div[role='tab'] {
+    color: var(--defaultColor);
+    font-weight: 400;
+    font-size: var(--fontSize);
+    line-height: 14px;
+    letter-spacing: 0;
+    user-select: none;
+  }
+
+  .ant-tabs-ink-bar {
+    // display: none;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+
+    &::after {
+      display: block;
+      width: var(--moveBarWidth);
+      height: 100%;
+      background-color: var(--moveBarColor);
+      border-radius: 1px 1px 0 0;
+      content: '';
+    }
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active > div[aria-selected='true'] {
+    color: var(--color);
+  }
+
+  // 不显示tabs的moreIcon
+  .ant-tabs-nav-operations {
+    display: none !important;
+  }
+}

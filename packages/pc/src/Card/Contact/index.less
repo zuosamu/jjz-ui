@@ -1,0 +1,55 @@
+@import '../../mixins.less';
+
+.jjz-contact-card {
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+
+  .blod {
+    font-weight: 500;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 12px 14px;
+    // background: url(/img/contact/card_head_bg.png) no-repeat center;
+    background-image: url(/img/contact/card_head_bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 4px 4px 0px 0px;
+
+    .contact-icon {
+      width: 20px;
+      height: 20px;
+    }
+    .contact-type-text {
+      padding-left: 4px;
+    }
+    .contact-code {
+      margin-left: auto;
+    }
+    .encrypt-icon {
+      width: 16px;
+      height: 16px;
+      margin-left: 4px;
+      cursor: pointer;
+    }
+  }
+
+  .main {
+    .hxzb-card-main();
+  }
+
+  .footer {
+    border-top: 1px solid #f7f7f7;
+  }
+}

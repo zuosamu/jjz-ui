@@ -1,0 +1,53 @@
+{
+  "name": "@jjz-ui/pc",
+  "version": "1.1.1",
+  "description": "> TODO: description",
+  "author": "苍狗-左森君 <zuosenjun@huize.com>",
+  "homepage": "https://github.com/zuosamu/jjz-ui#readme",
+  "license": "ISC",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "directories": {
+    "lib": "es",
+    "test": "__tests__"
+  },
+  "files": [
+    "es"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuosamu/jjz-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/zuosamu/jjz-ui/issues"
+  },
+  "sideEffects": [
+    "./src/**/*.less"
+  ],
+  "dependencies": {
+    "@ant-design/pro-layout": "^7.1.15",
+    "@ant-design/pro-provider": "^1.5.8",
+    "@ant-design/pro-table": "^2.63.6",
+    "@jjz-ui/icon": "^0.1.1",
+    "@types/lodash": "^4.14.178",
+    "@types/react-highlight-words": "^0.16.4",
+    "antd": "^4.18.7",
+    "braft-editor": "^2.3.9",
+    "lodash": "^4.17.21",
+    "react-highlight-words": "^0.17.0"
+  },
+  "devDependencies": {
+    "@types/react-color": "^3.0.6"
+  },
+  "gitHead": "39dc4502dd4e1f9db9152ea5443c5251e4d86188",
+  "peerDependencies": {
+    "@ant-design/pro-layout": "^7.1.15",
+    "ahooks": "^3.7.2"
+  }
+}
