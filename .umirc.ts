@@ -9,6 +9,8 @@ import { defineConfig } from 'dumi';
 import { resolve } from 'path';
 export default defineConfig({
   title: 'jjz-ui',
+  base: process.env.NODE_ENV === 'production' ? `/jjz-ui/` : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? `/jjz-ui/` : '/',
   alias: {
     public: resolve(__dirname, './public'),
   },
