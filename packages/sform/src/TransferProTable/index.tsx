@@ -1,12 +1,7 @@
 import { connect, mapProps } from '@formily/react';
 import { Transfer } from 'antd';
 import { BasicProTable } from '@jjz-ui/pc';
-import React, { FC } from 'react';
-import { TransferProps } from 'antd';
-
-interface TransferProTableProps<RecordType>
-  extends Pick<TransferProps<RecordType>, 'locale' | 'dataSource' | 'titles'> {}
-
+import React from 'react';
 export const TransferProTable = connect(
   ({ locale, dataSource, onChange, value, columns, titles }) => {
     return (
@@ -18,7 +13,7 @@ export const TransferProTable = connect(
         onChange={onChange}
       >
         {(props) => {
-          const getTableData = (params) =>
+          const getTableData = (params: { [s: string]: unknown }) =>
             props?.filteredItems?.filter((i: Record<string, unknown>) => {
               const arr = Object.entries(params).filter(([key]) => !key.startsWith('_'));
               return !arr?.length || arr?.find(([key, value]) => i?.[key] === value);
@@ -29,15 +24,15 @@ export const TransferProTable = connect(
               rowSelection={{
                 selections: false,
                 selectedRowKeys: props.selectedKeys,
-                onSelectAll(selected, selectedRows) {
+                onSelectAll(selected: boolean, selectedRows: any[]) {
                   props.onItemSelectAll(selectedRows.map((i) => i.key) as string[], selected);
                 },
-                onSelect({ key }, selected) {
+                onSelect({ key }: any, selected: boolean) {
                   props.onItemSelect(key as string, selected);
                 },
               }}
               params={{ _refresh: props.filteredItems.length }}
-              request={async (params) => {
+              request={async (params: { [s: string]: unknown }) => {
                 const len = getTableData(params);
                 return {
                   success: true,
@@ -62,7 +57,7 @@ export const TransferProTable = connect(
       </Transfer>
     );
   },
-  mapProps({ loading: true }, (props, field) => {
+  mapProps({ loading: true }, (props, field: any) => {
     return { ...props, dataSource: field?.dataSource, targetKeys: field?.targetKeys };
   }),
 );

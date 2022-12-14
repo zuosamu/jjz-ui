@@ -27,6 +27,7 @@
     "@formily/core": "^2.2.6",
     "@formily/react": "^2.2.6",
     "@jjz-ui/pc": "^1.1.1",
+    "babel-plugin-import": "^1.13.5",
     "dayjs": "^1.11.7"
   },
   "peerDependencies": {

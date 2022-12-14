@@ -27,6 +27,8 @@
   },
   "gitHead": "39dc4502dd4e1f9db9152ea5443c5251e4d86188",
   "dependencies": {
+    "@jjz-ui/pc": "^1.1.1",
+    "babel-plugin-import": "^1.13.5",
     "dayjs": "^1.11.7"
   }
 }
